@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Celebration - Final Message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="message"></h1>
+    </div>
+    <script>
+        // Get the name from URL parameters and display personalized message
+        const urlParams = new URLSearchParams(window.location.search);
+        const userName = urlParams.get('name') || 'Friend';
+        document.getElementById('message').innerHTML = `🎄 Merry Christmas, ${userName}! 🎄<br>Wishing you joy, peace, and love this holiday season!`;
+    </script>
+</body>
+</html>
